@@ -7,12 +7,12 @@ export class Triangle {
     this.side2 = sideTwo;
     this.side3 = sideThree;
   }
-  isEquilateral() {
+  get isEquilateral() {
     return (
       this.side1 === this.side2 && this.side1 === this.side3 && this.side1 !== 0
     );
   }
-  isIsosceles() {
+  get isIsosceles() {
     return (
       (this.side1 === this.side2 ||
         this.side1 === this.side3 ||
@@ -25,7 +25,7 @@ export class Triangle {
       this.side2 + this.side3 > this.side1
     );
   }
-  isScalene() {
+  get isScalene() {
     return (
       this.side1 !== this.side2 &&
       this.side1 !== this.side2 &&
